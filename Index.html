@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sanaullah Graphic Design</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+    line-height:1.6;
+}
+
+header{
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#111827;
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+.hero{
+    min-height:80vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:50px 20px;
+}
+
+.hero h1{
+    font-size:50px;
+    margin-bottom:15px;
+}
+
+.hero h1 span{
+    color:#38bdf8;
+}
+
+.hero p{
+    font-size:20px;
+    color:#cbd5e1;
+    max-width:650px;
+    margin:auto;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:14px 28px;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+section{
+    padding:70px 8%;
+    text-align:center;
+}
+
+section h2{
+    font-size:35px;
+    margin-bottom:35px;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#1e293b;
+    padding:30px 20px;
+    border-radius:15px;
+    border:1px solid #334155;
+}
+
+.card h3{
+    margin-bottom:10px;
+    color:#38bdf8;
+}
+
+.card p{
+    color:#cbd5e1;
+}
+
+.portfolio{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.work{
+    height:180px;
+    background:#1e293b;
+    border-radius:15px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border:1px dashed #64748b;
+    color:#94a3b8;
+}
+
+.about{
+    max-width:700px;
+    margin:auto;
+    color:#cbd5e1;
+}
+
+.contact{
+    background:#111827;
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    color:#94a3b8;
+    background:#020617;
+}
+
+@media(max-width:600px){
+
+    header{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    nav a{
+        margin:0 7px;
+        font-size:14px;
+    }
+
+    .hero h1{
+        font-size:38px;
+    }
+
+    .hero p{
+        font-size:17px;
+    }
+
+    section h2{
+        font-size:30px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Sanaullah Graphics</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Work</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+
+<section class="hero" id="home">
+
+    <div>
+
+        <h1>
+            Hi, I'm <span>Sanaullah</span>
+        </h1>
+
+        <p>
+            Creative Graphic Designer helping businesses and individuals
+            create beautiful and professional designs.
+        </p>
+
+        <a class="btn"
+           href="https://wa.me/923441820105"
+           target="_blank">
+           💬 Hire Me on WhatsApp
+        </a>
+
+    </div>
+
+</section>
+
+
+<section id="services">
+
+    <h2>My Services</h2>
+
+    <div class="services">
+
+        <div class="card">
+            <h3>🎨 Poster Design</h3>
+            <p>Professional and attractive poster designs.</p>
+        </div>
+
+        <div class="card">
+            <h3>💍 Wedding Cards</h3>
+            <p>Beautiful wedding and invitation card designs.</p>
+        </div>
+
+        <div class="card">
+            <h3>✨ Logo Design</h3>
+            <p>Simple and memorable logo designs for brands.</p>
+        </div>
+
+        <div class="card">
+            <h3>📱 Social Media</h3>
+            <p>Creative posts and graphics for social media.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="portfolio">
+
+    <h2>My Work</h2>
+
+    <div class="portfolio">
+
+        <div class="work">Your Design 1</div>
+        <div class="work">Your Design 2</div>
+        <div class="work">Your Design 3</div>
+        <div class="work">Your Design 4</div>
+
+    </div>
+
+</section>
+
+
+<section>
+
+    <h2>About Me</h2>
+
+    <div class="about">
+
+        <p>
+            My name is Sanaullah. I am a creative designer and
+            Artificial Intelligence student. I create modern,
+            clean and professional graphics for clients.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="contact" id="contact">
+
+    <h2>Let's Work Together</h2>
+
+    <p>
+        Have a design project? Contact me directly on WhatsApp.
+    </p>
+
+    <a class="btn"
+       href="https://wa.me/923441820105"
+       target="_blank">
+       📲 Contact Me
+    </a>
+
+</section>
+
+
+<footer>
+
+    © 2026 Sanaullah Graphics — All Rights Reserved
+
+</footer>
+
+</body>
+</html>
